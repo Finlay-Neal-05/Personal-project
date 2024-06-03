@@ -10,7 +10,7 @@ export const up = async function(knex) {
       table.string('content')
       table.timestamp('time_created')
       table.timestamp('time_completed')
-      table.string('durationi')
+      table.string('duration')
       table.boolean('main_goal')
       table.boolean('completed')
       table.string('time_done')
