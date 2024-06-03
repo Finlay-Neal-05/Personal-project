@@ -15,4 +15,8 @@ router.get('/', async (req, res) => {
   }
 })
 
+router.get('/test', async (req, res) => {
+  res.json({ msg: "this is for testing purposes"})
+})
+
 export default router
