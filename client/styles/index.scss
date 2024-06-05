@@ -3,4 +3,34 @@
 html, 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: #78A083
+}
+
+.body {
+  background-color: #35374B;
+  padding: 2em;
+}
+
+.header {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  width: 100em;
+  background-color: #344955;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto;
+  border-radius: 0.3em;
+}
+
+.loginButton {
+  position: absolute;
+  color: #78A083;
+  border: none;
+  border-radius: 0.3em;
+  width: 5em;
+  height: 2em;
+  background-color: #344955;
+  margin: 3px;
 }

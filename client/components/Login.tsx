@@ -18,7 +18,6 @@ export default function Login() {
         <div className="loginButton">
             <IfAuthenticated>
                 <button onClick={handleSignOut} className="loginButton">Sign Out</button>
-                {user && <p>Signed in as: {nickname}</p>}
             </IfAuthenticated>
             <IfNotAuthenticated>
                 <button onClick={handleSignIn} className="loginButton">Sign In</button>

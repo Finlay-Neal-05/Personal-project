@@ -10,8 +10,11 @@ function App() {
   return (
     <>
       <div className="app">
-        <p>This will eventually be my cool personal project</p>
+        <div className="body">
         <Login></Login>
+          <div className="header"><h1>Habit tracker</h1></div>
+        </div>
+        
       </div>
     </>
   )
