@@ -16,3 +16,6 @@ function App() {
 }
 
 export default App
+// TODO display existing goals and their progress.
+// TODO create add goal button and form.
+

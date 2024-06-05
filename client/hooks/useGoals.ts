@@ -19,7 +19,7 @@ export function useGoalsMutation<TData = unknown, TVariables = unknown>(
   ) {
     const queryClient = useQueryClient()
     const mutation = useMutation({
-      mutationFn,
+      mutationFn, //:addGoal(),
       onSuccess: () => {
         queryClient.invalidateQueries({ queryKey: ['goals'] })
       },
