@@ -37,7 +37,16 @@ body {
   margin: 3px;
 }
 
-.loginButton:hover {
+.button1 {
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  background: #344955;
+  background: linear-gradient(to right bottom, #78A083, #344955);
+  padding: 0.7em;
+}
+
+.loginButton:hover, .button1:hover {
   transform: scale(1.05);
   transition: 100ms ease-in-out;
 }

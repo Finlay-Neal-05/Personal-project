@@ -3,9 +3,6 @@ import GoalsList from './Goals-List.tsx'
 import Login from './Login.tsx'
 
 function App() {
-  const goals = useGoals().data
-  console.log(goals)
-
   return (
     <>
       <div className="app">

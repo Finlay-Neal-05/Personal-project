@@ -1,11 +1,15 @@
-import { useState } from 'react'
 import { useGoals } from '../hooks/useGoals'
-import { json } from 'react-router-dom'
+import { GoalData } from '../../models/goals'
 
 export default function GoalsList() {
   const goalsList = useGoals()
+  console.log(goalsList)
 
-  const { data: goals, isPending, isError, error } = useGoals()
+  const { data, isPending, isError, error } = useGoals()
+
+  const handleClick = () => {
+    console.log('Add a new goal!')
+  }
 
   if (isPending) {
     return <p>Loading...</p>
@@ -20,9 +24,16 @@ export default function GoalsList() {
     <>
       <div className="goalContainer">
         <p>This is a test</p>
-        {goals.map((goal, i) => {
-          return <p key={i}>{goal.msg}</p>
+        {data.map((goal: GoalData, i: number) => {
+          return (
+            <p key={i}>
+              {goal.title}, {goal.content}, id: {goal.id}
+            </p>
+          )
         })}
+        <button className="button1" id="addGoal" onClick={handleClick}>
+          Add Goal
+        </button>
       </div>
     </>
   )
