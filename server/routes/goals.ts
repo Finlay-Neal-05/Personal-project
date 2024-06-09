@@ -3,7 +3,11 @@ import { Router } from 'express'
 const router = Router()
 
 router.get('/test', async (req, res) => {
-    res.json({ msg: "Wow! This is now displaying in the front end!", msg2: "Now I have to add multiple so that I can do some cool mapping!"})
-  })
+  res.json([
+    { msg: 'this is a test1' },
+    { msg: 'this is a test2' },
+    { msg: 'this is a test3' },
+  ])
+})
 
-  export default router
+export default router

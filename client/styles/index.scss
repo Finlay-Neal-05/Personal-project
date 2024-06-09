@@ -7,16 +7,17 @@ body {
 }
 
 .body {
-  background-color: #35374B;
-  padding: 2em;
+  background-color: white;
+  padding: 0;
 }
 
 .header {
   align-self: center;
   justify-self: center;
   display: flex;
-  width: 100em;
-  background-color: #344955;
+  width: 60%;
+  // background-color: #344955;
+  background-color: white;
   padding: 1em;
   justify-content: center;
   align-items: center;
@@ -26,11 +27,41 @@ body {
 
 .loginButton {
   position: absolute;
-  color: #78A083;
+  color: white;
   border: none;
   border-radius: 0.3em;
   width: 5em;
   height: 2em;
-  background-color: #344955;
+  background: #344955;
+  background: linear-gradient(to right bottom, #78A083, #344955);
   margin: 3px;
+}
+
+.loginButton:hover {
+  transform: scale(1.05);
+  transition: 100ms ease-in-out;
+}
+
+.nav {
+  margin-top: 0;
+  height: 2em;
+  width: 100%;
+  // background-color: #78A083;
+  background: #466368;
+  background: linear-gradient(to right bottom, #78A083, #344955);
+  border-radius: 6px;
+}
+
+.goalContainer {
+
+  border: 3px solid red;
+  width: 60%;
+  // background-color: #344955;
+  background-color: white;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
+  margin: 3px auto;
+  border-radius: 0.3em;
+  margin-top: 2em;
 }
